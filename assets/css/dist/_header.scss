@@ -1,0 +1,17 @@
+.header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  font-size: 108px;
+  font-weight: 600;
+  text-transform: uppercase;
+  &__title {
+    margin: 0 auto 48px;
+  }
+  &__subtitle {
+      margin-right: auto;
+      margin-left: auto;
+  }
+}

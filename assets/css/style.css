@@ -1,0 +1,428 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.1 | 20191019
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Montblanc-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("MontBlanc-Regular"), url("Fonts/Montblanc/Montblanc-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Mories';
+  font-style: normal;
+  font-weight: bold;
+  src: local("Mories-Bold"), url("Fonts/Mories/Mories Bold.otf") format("otf"), url("Fonts/Mories/Mories Bold.woff") format("woff"), url("Fonts/Mories/Mories Bold.woff2") format("woof2"), url("Fonts/Mories/Mories Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'Mories';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Mories"), url("Fonts/Mories/Mories.otf") format("otf"), url("Fonts/Mories/Mories.woff") format("woff"), url("Fonts/Mories/Mories.woff2") format("woof2"), url("Fonts/Mories/Mories.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'Mories-Display';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Mories-Display"), url("Fonts/Mories/Mories-Display.otf") format("otf"), url("Fonts/Mories/Mories-Display.woff") format("woff"), url("Fonts/Mories/Mories-Display.woff2") format("woof2"), url("Fonts/Mories/Mories-Display.ttf") format("ttf");
+}
+
+body {
+  font-family: "Poppins";
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin-top: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 48px;
+  letter-spacing: 0.02em;
+  margin-bottom: 60px;
+}
+
+.header {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 108px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header__title {
+  margin: 0 auto 48px;
+}
+
+.header__subtitle {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about__description {
+  font-size: 18px;
+  padding: 20px;
+  max-width: 300px;
+}
+
+.about__image {
+  margin-left: 20px;
+  width: 500px;
+  height: 280px;
+  overflow: hidden;
+}
+
+.about__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-slide {
+  width: 100px;
+  height: 100px;
+}
+
+.swiper-wrapper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.mv {
+  height: 400vh;
+  width: 100%;
+  color: #f3f3f3;
+}
+
+.mv .slide {
+  width: 100%;
+  min-width: 100%;
+  max-width: 1000%;
+}
+
+.mv__ov {
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.mv__container {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh;
+}
+
+.mv__header {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mv__title {
+  font-size: 108px;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: #1a1c25;
+}
+
+.mv__buttons {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Mories;
+}
+
+.mv__text {
+  font-size: 48px;
+  overflow: hidden;
+  text-align: center;
+  font-weight: 300;
+}
+
+.scrollBallMore {
+  font-size: 16px;
+  overflow: hidden;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+  margin-right: 60px;
+}
+
+.SBBGMore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #f3f3f3;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 413px;
+  height: 413px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.SBBGMore div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 413px;
+  height: 413px;
+  z-index: -1;
+  border-radius: 50%;
+  background-color: #ff6300;
+  -webkit-transform: translate(75%, -75%);
+          transform: translate(75%, -75%);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.SBBGMore a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.SBBGMore a:hover + div::before {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.SBBGMore:hover {
+  color: #1a1c25;
+}
+
+.MorePrj {
+  font-size: 16px;
+  line-height: 88px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+  position: relative;
+}
+
+.MorePrj svg {
+  width: 88px;
+  height: 88px;
+  vertical-align: middle;
+  padding-left: 80px;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.MorePrj a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.ArrowOn {
+  fill: #f3f3f3;
+  -webkit-transition: fill .3s;
+  transition: fill .3s;
+}
+
+.MorePrj:hover {
+  color: #ff6300;
+}
+
+.MorePrj:hover svg {
+  -webkit-transform: translateX(-44px);
+          transform: translateX(-44px);
+}
+
+.MorePrj:hover .ArrowOn {
+  fill: #ff6300 !important;
+}
+
+.nav {
+  font-size: 48px;
+  height: 48px;
+  margin-left: 60px;
+}
+
+.nav a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.MenuOn {
+  position: relative;
+}
+
+#pOn,
+#aOn,
+#abOn,
+#cOn {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #ff6300;
+  position: absolute;
+  left: 0;
+}
+
+#pOff,
+#aOff,
+#abOff,
+#cOff {
+  position: absolute;
+  left: 1px;
+  bottom: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#portfolio:hover {
+  color: #ff6300;
+}
+
+#portfolio:hover #pOn {
+  opacity: 1;
+}
+
+#portfolio:hover #pOff {
+  opacity: 0;
+}
+/*# sourceMappingURL=style.css.map */
